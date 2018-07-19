@@ -24,7 +24,7 @@ These are the global settings for the Backup Admin API.
 title: BackupAdminClient
 description: Backup Admin Client
 openapi-type: arm
-tag: package-2016-05-01
+tag: package-2018-07-19
 ```
 
 ### Tag: package-2016-05-01
@@ -36,6 +36,17 @@ input-file:
     - Microsoft.Backup.Admin/preview/2016-05-01/Backup.json
     - Microsoft.Backup.Admin/preview/2016-05-01/BackupLocations.json
     - Microsoft.Backup.Admin/preview/2016-05-01/Backups.json
+```
+
+### Tag: package-2018-07-19
+
+These settings apply only when `--tag=package-2018-07-19` is specified on the command line.
+
+``` yaml $(tag) == 'package-2018-07-19'
+input-file:
+    - Microsoft.Backup.Admin/preview/2018-07-19/Backup.json
+    - Microsoft.Backup.Admin/preview/2018-07-19/BackupLocations.json
+    - Microsoft.Backup.Admin/preview/2018-07-19/Backups.json
 ```
 
 ---
