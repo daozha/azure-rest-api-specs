@@ -1,0 +1,63 @@
+{
+    "parameters": {
+        "subscriptionId": "11111111-2222-3333-4444-555555555555",
+        "resourceGroupName": "System.local",
+        "location": "local",
+        "backup": {
+            "properties": {
+                "externalStoreDefault": {
+                    "path": "\\\\192.168.1.1\\Share",
+                    "userName": "UserName",
+                    "password": "secretPassword",
+                    "encryptionKeyBase64": "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",
+                    "availableCapacity": "10GB",
+                    "isBackupSchedulerEnabled": false
+                }
+            },
+            "location": "local",
+            "tags": {}
+        },
+        "api-version": "2018-09-01"
+    },
+    "responses": {
+        "200": {
+            "body": {
+                "id": "/subscriptions/8158498d-27b1-4ccf-9aa1-de0f925731e6/resourcegroups/System.local/providers/Microsoft.Backup.Admin/backupLocations/local",
+                "name": "local",
+                "type": "Microsoft.Backup.Admin/backupLocations",
+                "location": "local",
+                "tags": {},
+                "properties": {
+                    "externalStoreDefault": {
+                        "path": "\\\\192.168.1.1\\Share",
+                        "userName": "UserName",
+                        "password": "",
+                        "encryptionKeyBase64": "",
+                        "availableCapacity": "10GB",
+                        "isBackupSchedulerEnabled": false
+                    }
+                }
+            }
+        },
+        "202": {
+            "body": {
+                "id": "/subscriptions/8158498d-27b1-4ccf-9aa1-de0f925731e6/resourcegroups/System.local/providers/Microsoft.Backup.Admin/backupLocations/local",
+                "name": "local",
+                "type": "Microsoft.Backup.Admin/backupLocations",
+                "location": "local",
+                "tags": {},
+                "properties": {
+                    "externalStoreDefault": {
+                        "path": "\\\\192.168.1.1\\Share",
+                        "userName": "UserName",
+                        "password": "",
+                        "encryptionKeyBase64": "",
+                        "availableCapacity": "10GB",
+                        "isBackupSchedulerEnabled": false
+                    }
+                }
+            }
+        },
+        "404": {}
+    }
+}
