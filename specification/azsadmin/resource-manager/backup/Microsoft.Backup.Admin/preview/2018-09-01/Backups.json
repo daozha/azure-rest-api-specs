@@ -127,6 +127,9 @@
                     },
                     {
                         "$ref": "Backup.json#/parameters/ApiVersionParameter"
+                    },
+                    {
+                        "$ref": "#/parameters/RestoreOptionsParameter"
                     }
                 ],
                 "responses": {
@@ -282,6 +285,19 @@
                     "type": "string"
                 }
             }
+        },
+        "RestoreOptions": {
+            "description": "Properties for restore options.",
+            "properties": {
+                "encryptionCertBase64": {
+                    "description": "The base64 raw data for the backup encryption certificate.",
+                    "type": "string"
+                },
+                "encryptionCertPassword": {
+                    "description": "Password of encryption certificate.",
+                    "type": "string"
+                }
+            }
         }
     },
     "parameters": {
@@ -291,6 +307,16 @@
             "description": "Name of the backup.",
             "required": true,
             "type": "string",
+            "x-ms-parameter-location": "method"
+        },
+        "RestoreOptionsParameter": {
+            "name": "restoreOptions",
+            "in": "body",
+            "description": "Restore options.",
+            "required": true,
+            "schema": {
+                "$ref": "#/definitions/RestoreOptions"
+            },
             "x-ms-parameter-location": "method"
         }
     },
